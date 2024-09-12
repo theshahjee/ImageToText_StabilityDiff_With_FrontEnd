@@ -23,7 +23,7 @@ with st.sidebar:
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
-        {"role": "assistant", "content": "What kind of image do you want me to draw? (example: running cat)"}]
+        {"role": "assistant", "content": "What kind of image do you want me to draw? (example: running cat) "}]
     
 for message in st.session_state.messages:
     st.chat_message(message["role"]).write(message["content"])
